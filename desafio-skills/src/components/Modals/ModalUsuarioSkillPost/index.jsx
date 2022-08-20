@@ -78,7 +78,7 @@ export default function ModalUsuarioSkillPost({ show, handleClose, idUsuario }) 
     })
   
     return (
-        <Modal className="containerModal" show={show} onHide={handleClose}>
+        <Modal className="containerModalPost" show={show} onHide={handleClose}>
             <button className="close" onClick={handleClose}>
                 <h3>X</h3>
             </button>
@@ -104,21 +104,20 @@ export default function ModalUsuarioSkillPost({ show, handleClose, idUsuario }) 
                             />
                         </div>
                     </div>
-                    <Modal.Footer className="modalFooter">
-                        <div>
-                            <div className="containerBotoesModal">
-                                <button
-                                    className='botoesModal botaoAtualizar'
+                    <Modal.Footer>
+                            <div className="modalFooter">
+                                <div>
+                                <button className="botoesModal" style={{backgroundColor: "green"}} 
                                     onClick={(e) => cadastrarUsuarioSkill(e)}
                                 >
                                     Cadastrar
                                 </button>
-                            </div>
-                        </div>
-                        <div className="containerBotoesModal">
-                            <button className='botoesModal botaoCancelar' onClick={handleClose}  >
+                                </div>
+                                <div>
+                            <button className="botoesModal" style={{backgroundColor: "red"}} onClick={handleClose}  >
                                 Cancelar
                             </button>
+                            </div>
                         </div>
                     </Modal.Footer>
                 </Form>

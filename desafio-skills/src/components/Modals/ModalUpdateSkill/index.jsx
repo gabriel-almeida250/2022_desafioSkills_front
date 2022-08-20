@@ -89,17 +89,18 @@ export default function ModalUpdateSkill({ show, handleClose, identificadorId })
             <Modal.Body className='modalBody'>
             <Form onSubmit={handleSubmit(atualizarSkill)}>
                     <div>
-                        <div className="informacoesAlteradas"><b>Nome*</b></div>
+                        <div className="titulo"><b>Nome*</b></div>
                         <Input
                             {...register("name")}
                             type="text"
                             placeholder="Nome"
+                            readOnly
                         />
                         <p className="error-message">{errors.name?.message}</p>
                     </div>
                     <div className="inputFlex">
                         <div className="styleDiv">
-                            <div className="informacoesAlteradas"><b>Versão*</b></div>
+                            <div className="titulo"><b>Versão*</b></div>
                             <Input
                                 {...register("versao")}
                                 type="text"
@@ -108,7 +109,7 @@ export default function ModalUpdateSkill({ show, handleClose, identificadorId })
                             <p className="error-message">{errors.versao?.message}</p>
                         </div>
                         <div className="styleDiv">
-                            <div className="informacoesAlteradas"><b>Descrição*</b></div>
+                            <div className="titulo"><b>Descrição*</b></div>
                             <Input
                                 {...register("description")}
                                 type="text"
@@ -117,7 +118,7 @@ export default function ModalUpdateSkill({ show, handleClose, identificadorId })
                             <p className="error-message">{errors.description?.message}</p>
                         </div>
                         <div className="styleDiv">
-                            <div className="informacoesAlteradas"><b>Imagem(URL)*</b></div>
+                            <div className="titulo"><b>Imagem(URL)*</b></div>
                             <Input
                                 {...register("imageUrl")}
                                 type="text"
@@ -126,24 +127,13 @@ export default function ModalUpdateSkill({ show, handleClose, identificadorId })
                             <p className="error-message">{errors.imageUrl?.message}</p>
                         </div>
                     </div>
-                    <Modal.Footer className="modalFooter">
-              <div className="botaoCadastrar botoesModal">
                 <button
-                  className='stylesButton'
+                 className="botaoAtualizar" style={{backgroundColor: "green"}}
                   type="submit"
-                ><img className="salvar" src={salvar} alt="neki" />
+                >
                   Atualizar
                 </button>
-              </div>
-            </Modal.Footer>
           </Form>
-          <div>
-            <div className="botaoCancelar">
-              <button className='stylesButton2' onClick={handleClose}  ><img className="salvar" src={cancelar} alt="neki" />
-                Cancelar
-              </button>
-            </div>
-          </div>
         </Modal.Body>
       </Modal >
     )

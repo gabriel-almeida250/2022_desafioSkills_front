@@ -14,22 +14,18 @@ function ModalDelete({ show, handleClose, title, texto, acao, tema }) {
                 </button>
             </Modal.Header>
             <b style={{ fontSize: 17, padding: 25 }}>{texto}</b>
-            <Modal.Footer>
-                <div>
+                <div className='modalFooter'>
                     <button
-                        className='stylesButton adicionar'
+                        className="botoesModal" style={{backgroundColor: "green"}}
                         onClick={(e) => acao(e)}
-                    ><img className="salvar" src={salvar} alt="neki" />
+                    >
                         Confirmar
                     </button>
-                </div>
-                <div >
-                    <button className='stylesButton2 adicionar' onClick={handleClose}>
-                        <img className="salvar" src={cancelar} alt="neki" />
+                    <button className="botoesModal" style={{backgroundColor: "red"}} onClick={handleClose}>
                         Cancelar
                     </button>
-                </div>
-            </Modal.Footer>
+                    </div>
+
 
         </Modal>
     )

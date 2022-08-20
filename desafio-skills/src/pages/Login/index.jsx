@@ -8,6 +8,7 @@ import { AuthContext } from "../../contexts/auth";
 
 import "./styles.css";
 import Header from "../../components/Header";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   
@@ -71,6 +72,9 @@ const Login = () => {
             </div>
             <div className="actions">
               <button type="submit">Entrar</button>
+            </div>
+            <div className="linkCadastro">
+            <Link className="link" to="/registro" >Clique aqui para fazer o cadastro</Link>
             </div>
         </form>
     </div>

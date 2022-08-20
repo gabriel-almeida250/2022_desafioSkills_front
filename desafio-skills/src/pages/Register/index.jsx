@@ -6,6 +6,7 @@ import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from "react-hook-form";
 import { API } from "../../services/api";
+import Header from "../../components/Header";
 
 import * as yup from "yup";
 
@@ -19,7 +20,7 @@ const Register = () => {
         login: yup.string().required("Campo obrigatório !"),
         senha: yup.string().required("Campo obrigatório !"),
         confirmaSenha: yup.string()
-        .oneOf([yup.ref('senha'), null], 'Passwords must match')
+        .oneOf([yup.ref('senha'), null], 'As senhas tem que ser iguais').required("Campo obrigatório !"),
       }).required();
 
       const navigate = useNavigate();
@@ -79,14 +80,16 @@ const [valuesSenha, setValuesSenha] = React.useState({
   };
 
   return (
-    <div id="login">
-      <h1 className="title">Login do Sistema</h1>
+    <>
+    <Header />
+    <div id="register">
+      <h1 className="title">Cadastro do Sistema</h1>
         <form className="form" onSubmit={handleSubmit(criarUsuario)}>
             <div className="field">
-              <label htmlFor="email">Email</label>
-              <input
+              <label htmlFor="email">Login</label>
+              <Input
               {...register("login")}
-              placeholder="login"
+              placeholder="Login"
               name="login"
             />
             <p className="error-message">{errors.login?.message}</p>
@@ -96,7 +99,7 @@ const [valuesSenha, setValuesSenha] = React.useState({
               <Input
               type={valuesSenha.showSenha ? "text" : "password"}
               {...register("senha")}
-              placeholder="senha"
+              placeholder="Senha"
               name="senha"
               endAdornment={
                 <inputAdornment>
@@ -113,7 +116,7 @@ const [valuesSenha, setValuesSenha] = React.useState({
               <Input
               type={valuesConfirmaSenha.showConfirmaSenha ? "text" : "password"}
               {...register("confirmaSenha")}
-              placeholder="confirmaSenha"
+              placeholder="Confirma Senha"
               name="confirmaSenha"
               endAdornment={
                 <inputAdornment>
@@ -130,6 +133,7 @@ const [valuesSenha, setValuesSenha] = React.useState({
             </div>
         </form>
     </div>
+    </>
   );
 };
 

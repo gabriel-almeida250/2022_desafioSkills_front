@@ -16,7 +16,7 @@ function UpdateDelete({ identificador, identificadorId, nomeDeletado  }) {
     return (
         <div>
             <div className="botoesAcoesAtivar">
-                <div className="editAcoes" onClick={() => abrirModal()} title="Editar Patrimônio">
+                <div className="editAcoes" onClick={() => abrirModal()} title="Editar Skill">
                     <img style={{ cursor: 'pointer' }} src={edit} alt="edit" width={24}/>
                 </div>
                 <ModalUpdateSkill show={show} handleClose={handleClose} identificadorId={identificadorId} />
