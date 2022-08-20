@@ -1,0 +1,30 @@
+.botoesAcoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40%;
+    margin-right: 10%;
+}
+
+.botoesAcoesAtivar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 12%;
+    margin-right: 2%;
+}
+
+.deleteAcoes {
+    background-color: #ff0000;
+    padding: 10px;
+    list-style-type: none;
+    border-radius: 50%;
+    transition: transform 0.1s linear;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

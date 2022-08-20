@@ -11,6 +11,7 @@ import { useContext } from "react";
 
 import { AuthProvider, AuthContext } from "../../contexts/auth";
 import Register from "../../pages/Register";
+import Footer from "../../components/Footer";
 
 const AppRoutes = () => {
     const Private = ({children}) => {
@@ -35,6 +36,7 @@ const AppRoutes = () => {
                 <Route exact path="/registro" element={<Register />} />
                 <Route exact path="/" element={<Private><Home /></Private>} />
             </Routes>
+            <Footer />
         </AuthProvider>
         </Router>
     )

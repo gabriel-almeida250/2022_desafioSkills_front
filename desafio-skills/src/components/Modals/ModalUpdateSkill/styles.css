@@ -1,0 +1,73 @@
+.modal-content{
+    margin-top: 10%;
+    background-color: #585988;
+    border-radius: 10px!important;
+}
+
+.containerModal{
+    background-color: #5859880e;
+}
+
+.close{
+    text-align: right;
+    border-width: 0;
+    background-color: #585988;
+    color: white;
+}
+
+.informacoesAlteradas{
+    color: #eee;
+    margin-top: 10px;
+}
+
+.modal-footer{
+    border-width: 0!important;
+    justify-content: space-evenly!important;
+    background-color: #585988!important;
+}
+
+.modalFooterDelete{
+    border-width: 0!important;
+    justify-content: space-evenly!important;
+    background-color: #585988!important;
+    margin-top: -1.6%;
+}
+
+.botoesModal{
+    padding: 5px;
+    border-radius: 3px;
+    transition: transform 0.1s linear;
+}
+
+.botoesModal:hover{
+    transform: scale(1.11);
+    box-shadow: 0 0 0.28em black;
+}
+
+.botaoAtualizar{
+    background-color: green;
+    font-weight: bold;
+}
+
+.botaoCancelar{
+    background-color: #ff0000c7;
+    font-weight: bold;
+}
+
+.fade.modal.show{
+    background-color: transparent;
+}
+
+.modal-header{
+    border-width: 0;
+}
+
+.adicionar{
+    background-color: green;
+    font-weight: bold;
+}
+
+.deletar{
+    background-color: #ff0000c7;
+    font-weight: bold;
+}

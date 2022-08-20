@@ -1,0 +1,290 @@
+.foto {
+    max-height: 14vh;
+    width: 50vh;
+    border-bottom: 1px solid black;
+}
+
+.row>* {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+    padding-right: calc(var(--bs-gutter-x) * .0) !important;
+    padding-left: calc(var(--bs-gutter-x) * .0) !important;
+}
+
+.ModalFooter  {
+    justify-content: left;
+    margin-left: 5%;
+    margin-top: 10%;
+    
+}
+
+.botoesModal {
+    transition: background-color 0.25s ease-in-out;
+}
+
+.botoesModal:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+.stylesButton {
+    padding: 8px;
+    background-color: #23646abb;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.stylesButton2 {
+    padding: 8px;
+    background-color: #fd2020bb;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.close {
+    background-color: #fff;
+    font-size: 22px;
+    border: none;
+    margin-right: 15px;
+    margin-top: 5px;
+    align-self: flex-end !important;
+}
+
+.modalBody {
+    padding-top: 0 !important;
+    justify-content: center !important;
+    align-items: center ;
+}
+
+.idColaborador{
+    text-align: center;
+}
+
+.pesquisar {
+    width: 30rem;
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border-color: black;
+    color: black;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.alinhar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lupa {
+    width: 3rem;
+    background-color: #2D939C;
+    padding: 12px;
+    margin-left: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.lupa:active {
+    background: #5daeb5e8;
+}
+
+.stylesButtonCancelar {
+    padding: 8px;
+    background-color: #ff0000bb;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+.styleAnexo {
+    margin-top: 30px;
+}
+
+.inputFlex2 {
+    margin-top: 15px;
+    justify-content: space-between;
+    display: flex;
+    margin-right: 190px;
+}
+
+.inputFlex3 {
+    margin-top: 15px;
+}
+
+.styleDiv {
+    margin-top: 1rem;
+
+}
+
+.salvar {
+    width: 20px;
+    margin-right: 8px;
+}
+.alerta{
+    width: 70px;
+    margin-left: 40%;
+}
+
+.desativado {
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.tituloAtivo {
+    margin-left: 60%;
+    margin-top: -30%;
+}
+
+.ativo {
+    margin: auto;
+    width: 35%;
+    margin-top: 15%;
+    display: grid;
+}
+
+.respostaAtivo {
+    font-size: 1rem;
+    margin-right: 30px;
+    margin-top: 10%;
+}
+
+.selectFlex {
+    margin-left: 5vh;
+}
+
+.tipo {
+
+    display: block;
+    flex-direction: column-reverse;
+    font-size: 1rem;
+    right: 12%;
+    position: absolute;
+}
+
+.tipo2 {
+    font-size: 1rem;
+    width: 35%;
+    right: 15%;
+    position: absolute;
+}
+
+.tituloTipo {
+    margin-left: 10%;
+    margin-bottom: 10%;
+    position: relative;
+    margin-left: 0;
+
+}
+
+.tituloTipo2 {
+    margin-bottom: 10%;
+    margin-right: 20%;
+}
+
+.respostaAtivo2 {
+    font-size: 1rem;
+    padding-left: 5px;
+}
+
+.error-message2 {
+    color: red;
+    margin-left: 40%;
+    width: 135px;
+}
+
+.containerListaVazia {
+    padding: 6%;
+    font-weight: bold;
+}
+
+.mensagemListaVazia {
+    font-size: 2rem;
+    flex-direction: column;
+    display: block;
+}
+
+.voltarInterface {
+    font-size: 1.5rem;
+}
+
+.textoVazio {
+    transition: transform 0.1s linear;
+    text-decoration: none;
+    color: black;
+    flex-direction: column;
+}
+
+.textoVazio:hover {
+    color: #121212b7;
+}
+
+.nascimentoData {
+    border-width: 0px;
+    border-bottom: 1px solid #777;
+}
+
+nascimentoData:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    border-bottom: 1px solid #8d8b8b;
+    outline: 0;
+}
+
+.listaModal {
+    overflow-y: auto;
+    max-height: 70px;
+    margin-bottom: 10px;
+    max-width: 200px;
+    margin-top: 5px;
+}
+
+.listaModal2 {
+    overflow-y: auto;
+    max-height: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.dark-mode .linkPatrimonio {
+    text-decoration: none;
+    color: #eee;
+}
+
+.dark-mode .linkPatrimonio:hover {
+    text-decoration: none;
+    color: #2D939C;
+}
+
+.linkPatrimonio {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}

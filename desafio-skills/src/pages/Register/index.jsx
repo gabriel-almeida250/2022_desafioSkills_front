@@ -10,6 +10,7 @@ import { API } from "../../services/api";
 import * as yup from "yup";
 
 import "./styles.css";
+import { useNavigate } from "react-router-dom";
 
 
 const Register = () => {
@@ -20,6 +21,8 @@ const Register = () => {
         confirmaSenha: yup.string()
         .oneOf([yup.ref('senha'), null], 'Passwords must match')
       }).required();
+
+      const navigate = useNavigate();
 
       const {
         register,
@@ -45,6 +48,8 @@ const Register = () => {
         )
           .then(response => {
             console.log(response.data)
+            navigate("/login")
+            alert('Usuário cadastrado com sucesso!')
           })
           .catch(function (error) {
             if (error.response.status === 400) {

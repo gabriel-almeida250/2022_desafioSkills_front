@@ -7,6 +7,7 @@ import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import { AuthContext } from "../../contexts/auth";
 
 import "./styles.css";
+import Header from "../../components/Header";
 
 const Login = () => {
   
@@ -42,12 +43,14 @@ const Login = () => {
   };
 
   return (
+    <>
+    <Header />
     <div id="login">
       <h1 className="title">Login do Sistema</h1>
         <form className="form" onSubmit={handleSubmit}>
             <div className="field">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" 
+              <Input type="text" name="email" id="email" 
               value={usuario} onChange={(e) => setUsuario(e.target.value)} />
             </div>
             <div className="field">
@@ -71,6 +74,7 @@ const Login = () => {
             </div>
         </form>
     </div>
+    </>
   );
 };
 
